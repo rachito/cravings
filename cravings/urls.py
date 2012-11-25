@@ -9,8 +9,10 @@ urlpatterns = patterns('',
     url(r'^media/(?P<path>.*)$', 'django.views.static.serve',
         {'document_root': settings.MEDIA_ROOT}),
 
+    #Registration
+    url(r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
+    (r'^accounts/', include('registration.backends.default.urls')),
+
     #Principal
     url(r'^$', 'principal.views.index'),
-
-    #Urls de prueba
 )
