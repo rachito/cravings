@@ -13,6 +13,4 @@ urlpatterns = patterns('',
     url(r'^$', 'principal.views.index'),
 
     #Urls de prueba
-    
-
 )
