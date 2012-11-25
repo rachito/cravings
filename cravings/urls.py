@@ -12,4 +12,7 @@ urlpatterns = patterns('',
     #Principal
     url(r'^$', 'principal.views.index'),
 
+    #Urls de prueba
+    
+
 )
