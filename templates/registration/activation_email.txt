@@ -1,0 +1,7 @@
+Hola, solo falta un paso más para activar tu cuenta:
+
+Visita el siguiente enlace: {{ site }}/accounts/activate/{{ activation_key }}
+
+Nota: solo tienes {{ expiration_days }} días para activar tu cuenta.
+
+Gracias.

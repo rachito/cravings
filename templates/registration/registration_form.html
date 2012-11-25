@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block css %}{% endblock %}
+
+{% block content %}
+    <form action="." method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Registrar" />
+    </form>
+{% endblock %}
+
+{% block js %}
+    <script type="text/javascript">
+        $(document).ready(function(){
+            alert('Hola mundo');
+        });
+    </script>
+{% endblock %}
