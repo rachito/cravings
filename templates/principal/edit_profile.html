@@ -2,10 +2,11 @@
 {% block css %}{% endblock %}
 
 {% block content %}
-    <form action="" method="post">
+    <form action="", method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Registrar" />
+        {{ user_form.as_p }}
+        {{ user_profile.as_p }}
+        <input type="submit" value="Guardar" />
     </form>
 {% endblock %}
 

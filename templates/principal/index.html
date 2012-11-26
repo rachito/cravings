@@ -3,16 +3,12 @@
 
 {% block content %}
     <ul>
-        <li><a href="#">Crear cuenta de usuario</a></li>
-        <li><a href="#">Crear cuenta de restaurantero</a></li>
+        <li><a href="{% url principal.views.index %}">Crear cuenta de usuario</a></li>
+        <li><a href="{% url principal.views.edit_profile %}">Editar perfil</a></li>
         <li><a href="#">Iniciar sesión con facebook</a></li>
         <li><a href="#">Iniciar sesión con twitter</a></li>
+        <li><a href="{% url django.contrib.auth.views.logout %}">Cerrar sesión</a></li>
     </ul>
 {% endblock %}
 
-{% block js %}
-    <script type="text/javascript">
-        $(document).ready(function () {
-        })
-    </script>
-{% endblock %}
+{% block js %}{% endblock %}
