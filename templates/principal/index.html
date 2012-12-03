@@ -4,11 +4,11 @@
 {% block content %}
     <ul>
         <li><a href="{% url principal.views.index %}">Crear cuenta de usuario</a></li>
-        <li><a href="{% url principal.views.edit_profile %}">Editar perfil</a></li>
         <li><a href="#">Iniciar sesión con facebook</a></li>
         <li><a href="#">Iniciar sesión con twitter</a></li>
-        <li><a href="{% url django.contrib.auth.views.logout %}">Cerrar sesión</a></li>
     </ul>
+
+    <a href="#" class="btn btn-primary btn-mini">Touch</a>
 {% endblock %}
 
 {% block js %}{% endblock %}
